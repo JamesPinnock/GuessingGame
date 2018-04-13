@@ -25,7 +25,6 @@ public class GeussingGame {
 //      NOTE: it will be on the next line wating for input
         Scanner s = new Scanner(System.in);
 //      Print text scanned 's' and print it on next line
-        System.out.println(s.nextLine());
         
         String letter = "g";
         
