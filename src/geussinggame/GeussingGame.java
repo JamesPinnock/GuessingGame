@@ -28,24 +28,20 @@ public class GeussingGame {
 //      Print text scanned 's' and print it on next line
 
         ArrayList<String> foo = new ArrayList<String>();
-        
+
         foo.add("e");
         foo.add("d");
         foo.add("j");
 
-        String letter = foo.get((int)(Math.random() * foo.size()));
+        String letter = foo.get((int) (Math.random() * foo.size()));
 
-        while (true) {
-            if (s.nextLine().equals(letter)) {
+        while (!s.nextLine().equals(letter)) {
 
-                System.out.println("Got correct letter " + letter);
-                break;
+            System.out.println("You got it wrong true again");
 
-            } else {
-                System.out.println("You got it wrong true again");
-
-            }
         }
+
+        System.out.println("Got correct letter " + letter);
 
     }
 
