@@ -25,18 +25,20 @@ public class GeussingGame {
 //      NOTE: it will be on the next line wating for input
         Scanner s = new Scanner(System.in);
 //      Print text scanned 's' and print it on next line
-        
+
         String letter = "g";
-        
-        if (s.nextLine().equals(letter)){
-            
-            System.out.println("Got correct letter " + letter);
-            
-        }else{
-            System.out.println("You got it wrong " + letter);
-            
+
+        while (true) {
+            if (s.nextLine().equals(letter)) {
+
+                System.out.println("Got correct letter " + letter);
+                break;
+
+            } else {
+                System.out.println("You got it wrong " + letter);
+
+            }
         }
-        
 
     }
 
