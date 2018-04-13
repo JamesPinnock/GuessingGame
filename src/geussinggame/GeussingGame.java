@@ -5,6 +5,7 @@
  */
 package geussinggame;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -26,7 +27,13 @@ public class GeussingGame {
         Scanner s = new Scanner(System.in);
 //      Print text scanned 's' and print it on next line
 
-        String letter = "g";
+        ArrayList<String> foo = new ArrayList<String>();
+        
+        foo.add("e");
+        foo.add("d");
+        foo.add("j");
+
+        String letter = foo.get((int)(Math.random() * foo.size()));
 
         while (true) {
             if (s.nextLine().equals(letter)) {
@@ -35,7 +42,7 @@ public class GeussingGame {
                 break;
 
             } else {
-                System.out.println("You got it wrong " + letter);
+                System.out.println("You got it wrong true again");
 
             }
         }
